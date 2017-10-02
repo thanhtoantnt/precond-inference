@@ -3,7 +3,7 @@ exception Division_by_zero
 
 
 let passing =
-  QCheck.Test.make ~count:1000
+  QCheck.Test.make ~count:1000000
     ~name:"toy example"
     (QCheck.triple QCheck.small_signed_int QCheck.small_signed_int QCheck.small_signed_int)
     (fun (a, b, c) ->
